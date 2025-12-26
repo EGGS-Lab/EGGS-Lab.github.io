@@ -1,0 +1,102 @@
+/*Flexbox (CSS Flexible Box Layout) is a layout system for arranging items in one direction at a time—either a row or a column—with easy alignment and spacing. 
+Here, we use CSS Grid to create a two-column layout for the hero section.*/
+
+/*reset */
+* { box-sizing: border-box; }
+html, body { height: 100%; 
+  background-color: thistle; /*testing background color only*/
+}
+body { margin: 0; } 
+
+.site-header {
+  flex: 0 0 auto;   
+  padding: 12px 24px; /* top and bottom 12px, left and right 24px */
+  padding-right: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.logo{
+  width: 60px;
+  height: auto;
+  /* remove position/top/left */
+}
+
+.nav-bar{
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  font-size: large;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 130px 48px;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-box {
+  max-width: 520px; /* optional: prevents overly wide lines */
+}
+
+.intro-box h1 {
+  margin: 0 0 12px; /* remove default top margin + add space below */
+  font-size: 3em;
+}
+
+.intro-box p {
+  margin: 0; /* remove default margin so spacing is controlled */
+  font-size: 1.2em;
+}
+
+/*treat the link like a small inline item, but arrange the icons inside it cleanly in a row*/
+.icon-link {
+  display: inline-flex;
+  gap: 12px;           
+  align-items: center;
+  text-decoration: none;
+}
+
+.GSicon {
+  width: 35px;
+  height: 35px;
+}
+
+.LIicon {
+  width: 35px;
+  height: 35px;
+}
+
+.GHicon {
+  width: 35px;
+  height: 35px;
+}
+
