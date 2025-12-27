@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="assets/forest.mp4" type="video/mp4">
+    </video>
+
+    <div class="bg-overlay" aria-hidden="true"></div>
+
     <header class="site-header">
         <a class="site-logo" href="index.html" aria-label="logo_to_homepage">
-            <img src="pictures/ExampleLogo.jpg" alt = "logo" class="logo">
+            <img src="assets/ExampleLogo.jpg" alt = "logo" class="logo">
         </a>
         <nav class="nav-bar">
             <a class="nav-link" href="index.html">Home</a>
@@ -20,11 +26,11 @@
             <a class="nav-link" href="contact.html">Contact</a>
         </nav>
     </header>
-
+    
     <main>
         <section class="hero">
             <div class="hero-left">
-                <img src="pictures/Cooney_profile.png" alt="profile picture" class="avatar">
+                <img src="assets/Cooney_profile.png" alt="profile picture" class="avatar">
             </div>
             <div class="hero-right">
                 <div class="intro-box">
@@ -46,25 +52,29 @@
                         href="https://scholar.google.com/citations?hl=en&user=g8FqkTgAAAAJ&view_op=list_works&sortby=pubdate"
                         target="_blank" rel="noopener noreferrer"
                         aria-label="Google Scholar">
-                        <img class="GSicon" src="pictures/Google_Scholar_logo.svg" alt="">
+                        <img class="GSicon" src="assets/Google_Scholar_logo.svg" alt="">
                     </a>
                     
                     <a class="icon-link"
                         href="https://www.linkedin.com/in/daniel-cooney-93a27733/"
                         target="_blank" rel="noopener noreferrer" 
                         aria-label="LinkedIn">
-                        <img class="LIicon" src="pictures/LinkedIn_logo.png" alt="">
+                        <img class="LIicon" src="assets/LinkedIn_logo.png" alt="">
                     </a>
                     <a class="icon-link"
                         href="https://github.com/dbcooney"
                         target="_blank" rel="noopener noreferrer"
                         aria-label="GitHub"> 
-                        <img class="GHicon" src="pictures/github_logo.svg" alt="">
+                        <img class="GHicon" src="assets/github_logo.svg" alt="">
                     </a>
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        const v = document.getElementById("bgVideo");
+        v.playbackRate = 0.8; 
+    </script>
 </body>
 
 

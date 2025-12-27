@@ -4,9 +4,26 @@ Here, we use CSS Grid to create a two-column layout for the hero section.*/
 /*reset */
 * { box-sizing: border-box; }
 html, body { height: 100%; 
-  background-color: thistle; /*testing background color only*/
+  /* background-color: thistle; testing background color only */
+  margin: 0;
 }
 body { margin: 0; } 
+
+.bg-video{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  z-index: -10;
+}
+
+.bg-overlay{
+  position: fixed;
+  inset: 0;
+  z-index: -9;
+  background: rgba(0,0,0,0.10);  
+}
+
 
 .site-header {
   flex: 0 0 auto;   
@@ -15,7 +32,7 @@ body { margin: 0; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
 .logo{
@@ -33,7 +50,7 @@ body { margin: 0; }
 
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .hero {
@@ -65,11 +82,13 @@ body { margin: 0; }
 
 .intro-box {
   max-width: 520px; /* optional: prevents overly wide lines */
+  color: white;
 }
 
 .intro-box h1 {
   margin: 0 0 12px; /* remove default top margin + add space below */
   font-size: 3em;
+  color: white;
 }
 
 .intro-box p {
