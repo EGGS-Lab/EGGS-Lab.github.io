@@ -17,6 +17,14 @@ body { margin: 0; }
   z-index: -10;
 }
 
+.static-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  z-index: -10;
+}
+
 .bg-overlay{
   position: fixed;
   inset: 0;
@@ -35,17 +43,20 @@ body { margin: 0; }
   box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
-.logo{
-  width: 60px;
-  height: auto;
-  /* remove position/top/left */
+.logo {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: block;        /* removes tiny baseline gap */
+  background: transparent;
+  position: relative;
 }
 
 .nav-bar{
   display: flex;
   gap: 80px;
   align-items: center;
-  font-size: large;
+  font-size: 20px;
 }
 
 .nav-link {
@@ -81,8 +92,18 @@ body { margin: 0; }
 }
 
 .intro-box {
-  max-width: 520px; /* optional: prevents overly wide lines */
-  color: white;
+  max-width: 560px;
+  padding: 28px 32px;
+  border-radius: 20px;
+
+  /* “blurry board” */
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(5px);
+
+  /* edge + depth */
+  border: 0.5px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
 }
 
 .intro-box h1 {
@@ -94,6 +115,7 @@ body { margin: 0; }
 .intro-box p {
   margin: 0; /* remove default margin so spacing is controlled */
   font-size: 1.2em;
+  color: white;
 }
 
 /*treat the link like a small inline item, but arrange the icons inside it cleanly in a row*/
@@ -104,18 +126,64 @@ body { margin: 0; }
   text-decoration: none;
 }
 
-.GSicon {
+.icon-link img {
   width: 35px;
   height: 35px;
 }
 
-.LIicon {
-  width: 35px;
-  height: 35px;
+.research{
+  color: white;
+  font-size: 100px;
 }
 
-.GHicon {
-  width: 35px;
-  height: 35px;
+.pub-box{
+  width: min(5600px, 92vw);
+  margin: 50px auto 0;          /* center + push down below header */
+  padding: 28px 32px;
+  border-radius: 20px;
+
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(0px);  
+  backdrop-filter: blur(14px);
+
+  /* edge + depth */
+  border: 0.5px solid rgba(255, 255, 255, 0.899);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+
+  color: white;               
+}
+
+.pub-box h1{
+  margin-top: 0;        /* removes the extra gap at the top */
+  margin-bottom: 12px;  /* optional */
+}
+
+.pub-list{
+  list-style-position: inside; 
+  padding-left: 0;
+  margin: 15px 20px 0;
+}
+
+.pub-list li{
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.pub-list li::marker{
+  color: rgba(255,255,255,0.85);
+}
+
+.pub-list li a {
+  color: #FF5F05;
+  text-decoration: none;
+}
+
+.pub-box a:hover {
+  text-decoration: underline;
+  color: #13294B;
+}
+
+.pub-box a:visited {
+  color: #13294B;
 }
 
