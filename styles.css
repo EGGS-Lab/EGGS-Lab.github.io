@@ -136,7 +136,7 @@ body { margin: 0; }
   font-size: 100px;
 }
 
-.pub-box{
+.bg-box{
   width: min(5600px, 92vw);
   margin: 50px auto 0;          /* center + push down below header */
   padding: 28px 32px;
@@ -178,13 +178,18 @@ body { margin: 0; }
   text-decoration: none;
 }
 
-.pub-box a:hover {
+.bg-box a:hover {
   text-decoration: underline;
   color: #13294B;
 }
 
-.pub-box a:visited {
+.bg-box a:visited {
   color: #13294B;
+}
+
+.PI-card-horizontal {
+  align-items: center;
+  gap: 16px;
 }
 
 .people-gridThird {
@@ -228,11 +233,12 @@ body { margin: 0; }
   line-height: 1.35;
   opacity: 0.85;
 }
-.person-card.horizontal {
+/* .person-card.horizontal {
   display: flex;        
   align-items: center;
   gap: 16px;
-}
+  grid-template-columns: repeat(2, 1fr);
+} */
 .PI-photo{
   width: 300px;
   height: 300px;
@@ -240,7 +246,7 @@ body { margin: 0; }
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.pub-box {
+.bg-box {
   position: relative;
 }
 
