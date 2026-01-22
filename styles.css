@@ -277,7 +277,7 @@ body { margin: 0; }
 .teaching-bg-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.26);
+  background: rgba(0, 0, 0, 0.2);
   z-index: -9;
 }
 
