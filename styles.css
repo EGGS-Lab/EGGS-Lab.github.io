@@ -236,8 +236,10 @@ body { margin: 0; }
 }
 
 .person-card-nonPI {
+  text-align: center;
   max-width: 250px;     
   width: 100%;
+  margin: 0;
 }
 
 .student-sections {
@@ -252,6 +254,18 @@ body { margin: 0; }
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   justify-items: center;
+}
+
+.collab-card {
+  text-align: center;
+}
+
+.collab-card h3 {
+  margin: 0;
+}
+
+.collab-school {
+  margin: 8px 0 0;
 }
 
 .bg-box .collab-gridFour a,
