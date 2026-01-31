@@ -229,10 +229,14 @@ body { margin: 0; }
 }
 
 .people-gridThird {
+  width: min(1200px, 100%);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
+  gap: 100px; 
   justify-items: center;
+
+  margin: 0 auto;
+
 }
 
 .person-card-nonPI {
@@ -241,6 +245,11 @@ body { margin: 0; }
   width: 100%;
   margin: 0;
 }
+
+/* .person-card a {
+  text-decoration: none;
+  color: inherit;
+} */
 
 .student-sections {
   margin-top: 40px;
