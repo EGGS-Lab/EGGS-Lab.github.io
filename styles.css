@@ -166,7 +166,15 @@ body { margin: 0; }
 }
 
 .bg-box a:visited {
-  color: #13294B;
+  color: #FF5F05 /* #13294B;*/
+}
+.bg-box a:visited:hover {
+    color: #13294B;          /* hover color */
+    text-decoration: underline;
+}
+.bg-box a,  
+.bg-box a:active {
+  color: #FF5F05;          /* active color */
 }
 
 .pub-list{
