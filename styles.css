@@ -228,6 +228,11 @@ body { margin: 0; }
   text-decoration: underline;
 }
 
+.PI-line a:visited {
+  color: white;
+}
+
+
 .people-gridThird {
   width: min(1200px, 100%);
   display: grid;
