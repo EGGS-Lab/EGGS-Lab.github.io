@@ -244,6 +244,11 @@ body { margin: 0; }
 
 }
 
+.person-card p.major-or-school {
+  margin-top: -1rem;      /* smaller than default */
+  /* or even 0 if you want it very tight */
+}
+
 .person-card-nonPI {
   text-align: center;
   max-width: 250px;     
