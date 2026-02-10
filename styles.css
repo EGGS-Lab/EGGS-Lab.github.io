@@ -204,7 +204,7 @@ body { margin: 0; }
   gap: 24px;
 
   max-width: 1100px;         
-  margin: 0 auto;            
+  margin: 0 130px;            
 }
 
 .PI-photo{
@@ -236,15 +236,25 @@ body { margin: 0; }
   text-decoration: underline;
 }
 
+.PI-line a:visited {
+  color: white;
+}
+
+
 .people-gridThird {
   width: min(1200px, 100%);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px; 
+  gap: 120px; 
   justify-items: center;
 
-  margin: 0 auto;
+  margin: 0 100px;
 
+}
+
+.person-card p.major-or-school {
+  margin-top: -1rem;      /* smaller than default */
+  /* or even 0 if you want it very tight */
 }
 
 .person-card-nonPI {
