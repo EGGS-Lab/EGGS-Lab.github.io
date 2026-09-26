@@ -32,6 +32,40 @@ body { margin: 0; }
   background: rgba(0,0,0,0.10);  
 }
 
+.static-page-overlay {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Lab-only rendering hints; these do not change layout or appearance. */
+.lab-page .static-bg,
+.lab-page .bg-overlay {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.lab-page .person-card,
+.lab-page .collab-card {
+  content-visibility: auto;
+}
+
+.lab-page .person-card {
+  contain-intrinsic-size: auto 520px;
+}
+
+.lab-page .collab-card {
+  contain-intrinsic-size: auto 100px;
+}
+
+/* Preserve the original 14px glass effect without recomputing it on every scroll frame. */
+.lab-page .bg-box {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3625), rgba(0, 0, 0, 0.3625)),
+    url("assets/static-bg-blurred.webp") center / cover fixed no-repeat;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
 
 .site-header {
   flex: 0 0 auto;   
@@ -129,6 +163,18 @@ body { margin: 0; }
 .icon-link img {
   width: 35px;
   height: 35px;
+}
+
+.student-run-note {
+  position: fixed;
+  left: 18px;
+  bottom: 12px;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
+  pointer-events: none;
 }
 
 .research{
@@ -256,6 +302,12 @@ body { margin: 0; }
   margin: 0;
 }
 
+.faiz-profile {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* .person-card a {
   text-decoration: none;
   color: inherit;
@@ -310,7 +362,7 @@ body { margin: 0; }
 .teaching-bg-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
   z-index: -9;
 }
 
@@ -560,4 +612,3 @@ body { margin: 0; }
   text-decoration: none;
   color: #13294B;
 }
-
