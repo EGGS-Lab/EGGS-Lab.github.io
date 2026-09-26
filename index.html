@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: #1b2617 url('assets/forest-poster.webp') center / cover fixed no-repeat;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preload" href="assets/forest-poster.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+    <video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="auto" poster="assets/forest-poster.webp" aria-hidden="true">
         <source src="assets/forest.mp4" type="video/mp4">
     </video>
 
@@ -80,6 +81,7 @@
                 </div>
         </section>
     </main>
+    <small class="student-run-note">Student-run website</small>
     <script>
         const v = document.getElementById("bgVideo");
         v.playbackRate = 0.8; 

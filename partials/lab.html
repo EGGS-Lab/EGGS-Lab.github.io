@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="prefetch" href="../index.html">
+    <link rel="preload" href="../assets/forest-poster.webp" as="image" type="image/webp">
+    <link rel="preload" href="../assets/static-bg-blurred.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="lab-page">
     <img src="../assets/static_bg.png" alt="Static Background" class="static-bg">
-    <div class="bg-overlay" aria-hidden="true"></div>
+    <div class="bg-overlay static-page-overlay" aria-hidden="true"></div>
     <header class="site-header">
         <a class="site-logo" href="../index.html" aria-label="logo_to_homepage">
             <img src="../assets/Cooney_logo.png" alt = "logo" class="logo">
@@ -27,7 +30,7 @@
             <h1>The Cooney Lab</h1>
             <h2>Principal Investigator: Daniel Cooney</h2>
             <div class="PI-card">
-                <img src="../assets/Cooney_profile.png" alt="Daniel Cooney Photo" class="PI-photo">
+                <img src="../assets/Cooney_profile.png" alt="Daniel Cooney Photo" class="PI-photo" decoding="async">
                 <div class="person-text">
                     <p class="PI-title">
                         Assistant Professor, Mathematics<br>
@@ -51,15 +54,15 @@
             <h2 class="student-sections">Graduate Students</h2>
             <div class="people-gridThird">
                 <div class="person-card">
-                    <img src="../people/Dan-Chen.jpg" alt="Name" class="person-card-nonPI">
+                    <img src="../people/Dan-Chen.jpg" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Panyue (Dan) Chen</h3>
-                    <h4>Incoming MS Student in Applied Mathematics</h4>
+                    <h4>MS Student in Applied Mathematics</h4>
                     <p><strong>Research Interests:</strong> Evolutionary Game Theory, Multilevel Selection, Spatial Pattern Formation, Computational Neuroscience, Infectious Disease Dynamics, Network Theory, Stochastic Modeling</p>
                     <h5>*please email panyuec2@illinois.edu if any error occurs in the website</h5>
                 </div>
                 <div class="person-card">
-                    <img src="../people/Muhammad-Raza.jpg" alt="Name" class="person-card-nonPI">
+                    <img src="../people/Muhammad-Raza.jpg" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>
                         Muhammad Raza
@@ -68,16 +71,17 @@
                     <p>Research Interests: Mathematical biology, epidemiological and ecological modeling, population dynamics, evolutionary game theory and adaptive dynamics, multiscale modeling, ordinary and partial differential equations, stochastic processes, and pattern formation in biological and social systems.</p>
                 </div>
                 <div class="person-card">
-                    <img src="../people/Shlok-Mulye.jpg" alt="Name" class="person-card-nonPI">
+                    <img src="../people/Shlok-Mulye.jpg" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>
                         Shlok Mulye
                     </h3>
-                    <h4>MS Student in Applied Mathematics</h4>
+                    <p class="major-or-school"> (Max Planck Institute for Evolutionary Biology)</p>
+                    <h4>PhD Student in Program in Theoretical Biology</h4>
                     <p><strong>Research Interests:</strong> Evolutionary Game Theory, Evolutionary Dynamics, Evolutionary Graph Theory, Stochastic Processes</p>
                 </div>
                 <div class="person-card">
-                    <img src="../people/Tianyong-Yao.png" alt="Name" class="person-card-nonPI">
+                    <img src="../people/Tianyong-Yao.png" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Tianyong Yao</h3>
                     <p class="major-or-school"> (Princeton University)</p>
@@ -85,14 +89,14 @@
                     <p><strong>Research Interests:</strong> Theoretical Ecology, Evolutionary Game Theory, Collective Behavior, Pattern Formation, Cultural Evolution, Sleep-wake Regulation, Circadian Rhythm, Ultradian Rhythm, Dopamine Rhythm, Malaria Disease,  Applied PDEs, Agent-Based Modeling, Bifurcation Analysis, Network Theory </p>
                 </div>
                 <div class="person-card">
-                    <img src="../people/Yefei-Zhang.jpeg" alt="Name" class="person-card-nonPI">
+                    <img src="../people/Yefei-Zhang.jpeg" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Yefei Zhang</h3>
                     <h4>PhD Student in Mathematics</h4>
                     <p><strong>Research Interests:</strong> Dynamical systems, network science, evolutionary game theory, stochastic processes</p>
                 </div>
                 <div class="person-card">
-                    <img src="../people/Yuxuan-Zhao.jpg" alt="Name" class="person-card-nonPI">
+                    <img src="../people/Yuxuan-Zhao.jpg" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Yuxuan Zhao</h3>
                     <h4>PhD Student in Mathematics</h4>
@@ -103,83 +107,77 @@
             <h2 class="student-sections">Undergraduate Students</h2>
             <div class="people-gridThird">
                 <div class="person-card">
-                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI">
+                    <img src="../people/faiz.jpg" alt="Faiz Muhammad" class="person-card-nonPI faiz-profile" decoding="async">
 
                     <h3>Faiz Muhammad</h3>
                     <p class="major-or-school">(Major: Math and Computer Science)</p>
-                    <p><strong>Research Interests:</strong> Population Dynamics, Social Systems, Dynamical Systems, Pattern Formation, PDEs</p>
+                    <p><strong>Research Interests:</strong> Dynamical systems, Computational Ecology, PDEs, Numerical Analysis, Social Systems</p>
                     <h5>*please email fhm2@illinois.edu if any error occurs in the website</h5>
                 </div>
                 <div class="person-card">
-                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI">
+                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI" decoding="async">
                     <h3>Isaac Ang</h3>
                     <p class="major-or-school">(Major: Math and Computer Science)</p>
                     <p><strong>Research Interests:</strong> Algal modeling, ODE simulation, Stability analysis, Lotka Volterra</p>
                 </div>
                 <div class="person-card">
-                    <img src="../people/Stanley-Combes.jpg" alt="Name" class="person-card-nonPI">
-
-                    <h3>Stanley Combes</h3>
-                    <p class="major-or-school">(Major: Mathematics)</p>
-                    <p><strong>Research Interests:</strong> PDEs, Dynamical Systems, Immunology, Epidemiological Dynamics, Population Dynamics, Infectious Disease Modeling</p>
-                </div>
-                <div class="person-card">
-                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI">
+                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Shuta Iwai </h3>
                     <p class="major-or-school">(Major: Mathematics)</p>
                     <p><strong>Research Interests:</strong> Number theory, Mathematical biology, Computational biology, and Epidemiology.</p>
                 </div>
                 <div class="person-card">
-                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI">
+                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Jonas Liang</h3>
                     <p class="major-or-school">(Major: Mathematics)</p>
                     <p><strong>Research Interests:</strong> Stochastic Process, Operation Research </p>
                 </div>
                 <div class="person-card">
-                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI">
+                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Xuhan Pan</h3>
                     <p class="major-or-school">(Major: Mathematics)</p>
                     <p><strong>Research Interests:</strong> Population dynamics, PDEs, Dynamical system</p>
                 </div>
                 <div class="person-card">
-                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI">
+                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Naro Panjaitan</h3>
                     <p class="major-or-school">(Major: Mathematics)</p>
                     <p><strong>Research Interests:</strong> population dynamics, evolutionary game theory.</p>
                 </div>
-                <div class="person-card">
-                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI">
-
-                    <h3>Chengning Xu</h3>
-                    <p class="major-or-school">(Major: Math and CS in California Institute of Technology)</p>
-                    <p><strong>Research Interests:</strong> Evolutionary game theory, stochastic processes, learning theory, graph theory, general probability, analysis, and algebra</p>
-                </div>
             </div>
             <h2>Alumni</h2>
             <div class="people-gridThird">
                 <div class="person-card">
-                    <img src="../people/Ahmad.jpg" alt="Name" class="person-card-nonPI">
+                    <img src="../people/Ahmad.jpg" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Ahmad Abdur Rahman ('25)</h3>
                     <p class="collab-school">(Current: Math MS in Virginia Tech)</p>
                     <p><strong>Research Interests:</strong> Collective motion modelling, chaotic dynamical systems, stochastic dynamics, reinforcement learning</p>
                 </div>
                 <div class="person-card">
-                    <img src="../people/Ahaan-Kanaujia.jpg" alt="Name" class="person-card-nonPI">
+                    <img src="../people/Ahaan-Kanaujia.jpg" alt="Name" class="person-card-nonPI" decoding="async">
 
                     <h3>Ahaan Kanaujia ('25)</h3>
                     <p class="collab-school">(Current: Goldman Sachs)</p>
                     <p><strong>Research Interests:</strong> Partial Differential Equation, Multilevel Selection, Stochastic Modeling</p>
                 </div>
                 <div class="person-card">
-                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI">
+                    <img src="../people/Stanley-Combes.jpg" alt="Name" class="person-card-nonPI" decoding="async">
 
-                    <h3>Insert Name</h3>
-                    <p>Research Interests: Insert Research Interests Here</p>
+                    <h3>Stanley Combes ('26)</h3>
+                    <p class="collab-school">(Current: Math MS in University of British Columbia)</p>
+                    <p><strong>Research Interests:</strong> PDEs, Dynamical Systems, Immunology, Epidemiological Dynamics, Population Dynamics, Infectious Disease Modeling</p>
+                </div>
+                <div class="person-card">
+                    <img src="../assets/blank_profile.png" alt="Name" class="person-card-nonPI" decoding="async">
+
+                    <h3>Chengning Xu</h3>
+                    <p class="collab-school">(Current: BS in Math and CS in California Institute of Technology)</p>
+                    <p><strong>Research Interests:</strong> Evolutionary game theory, stochastic processes, learning theory, graph theory, general probability, analysis, and algebra</p>
                 </div>
             </div>
             <h2>Collaborators</h2>
