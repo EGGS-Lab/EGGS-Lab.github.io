@@ -57,11 +57,11 @@ body { margin: 0; }
   contain-intrinsic-size: auto 100px;
 }
 
-/* Preserve the original 14px glass effect without recomputing it on every scroll frame. */
+/* Reuse the pre-softened internal background instead of recomputing blur on every scroll frame. */
 .lab-page .bg-box {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.3625), rgba(0, 0, 0, 0.3625)),
-    url("assets/static-bg-blurred.webp") center / cover fixed no-repeat;
+    linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
+    url("assets/internal-bg-v2.webp") center / cover fixed no-repeat;
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
