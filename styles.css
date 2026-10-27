@@ -33,7 +33,7 @@ body { margin: 0; }
 }
 
 .static-page-overlay {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.08);
 }
 
 /* Lab-only rendering hints; these do not change layout or appearance. */
@@ -291,6 +291,11 @@ body { margin: 0; }
 
 }
 
+.people-gridThird > .person-card {
+  width: 100%;
+  min-width: 0;
+}
+
 .person-card p.major-or-school {
   margin-top: -1rem;      /* smaller than default */
   /* or even 0 if you want it very tight */
@@ -304,7 +309,7 @@ body { margin: 0; }
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* .person-card a {
@@ -367,7 +372,7 @@ body { margin: 0; }
 .teaching-bg-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.08);
   z-index: -9;
 }
 
@@ -411,18 +416,22 @@ body { margin: 0; }
 }
 
 .course-card {
+  display: flex;
+  flex-direction: column;
   min-height: 200px;
   padding: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(214, 168, 90, 0.42);
   border-radius: 18px;
   background: rgba(14, 18, 14, 0.42);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+  box-shadow:
+    inset 0 1px 0 rgba(214, 168, 90, 0.10),
+    0 12px 30px rgba(0, 0, 0, 0.16);
   transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
 }
 
 .course-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(255, 255, 255, 0.45);
+  border-color: rgba(214, 168, 90, 0.70);
   background: rgba(14, 18, 14, 0.55);
 }
 
@@ -456,6 +465,7 @@ body { margin: 0; }
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: auto;
 }
 
 .course-terms > span {
