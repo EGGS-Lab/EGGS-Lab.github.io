@@ -285,6 +285,7 @@ body { margin: 0; }
   grid-template-columns: repeat(3, 1fr);
   gap: 120px; 
   justify-items: center;
+  align-items: start;
 
   margin: 0 100px;
 
@@ -296,16 +297,14 @@ body { margin: 0; }
 }
 
 .person-card-nonPI {
+  display: block;
   text-align: center;
   max-width: 250px;     
   width: 100%;
-  margin: 0;
-}
-
-.faiz-profile {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
+  margin: 0 auto;
 }
 
 /* .person-card a {
@@ -337,6 +336,12 @@ body { margin: 0; }
 
 .person-card .collab-school {
   margin: 0px 0 0;
+}
+
+.person-card .alumni-destination {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95em;
+  font-weight: 400;
 }
 
 .bg-box .collab-gridFour a,
