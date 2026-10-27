@@ -6,10 +6,11 @@
     <title>Document</title>
     <link rel="prefetch" href="../index.html">
     <link rel="preload" href="../assets/forest-poster.webp" as="image" type="image/webp">
+    <link rel="preload" href="../assets/internal-bg-v2.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <img src="../assets/static_bg.png" alt="Static Background" class="static-bg">
+    <img src="../assets/internal-bg-v2.webp" alt="Static Background" class="static-bg">
     <div class="teaching-bg-overlay" aria-hidden="true"></div>
     <header class="site-header">
         <a class="site-logo" href="../index.html" aria-label="logo_to_homepage">
@@ -24,90 +25,59 @@
         </nav>
     </header>
     <section>
-        <div class="teaching-timeline"> 
-            <div class="timeline-item" id="spring2026">
-                <div class="timeline-left">
-                    <span class="timeline-dot" aria-hidden="true"></span>
-                    <div class="timeline-term">Spring 2026</div>
-                </div>
-
-                <div class="timeline-right">
-                    <div class="course-grid">
-                        <a class="course-chip" href="https://courses.illinois.edu/search/schedule/2026/spring/MATH/442?sess=" target="_blank" rel="noopener noreferrer">MATH 442: Intro Partial Diff Equations</a>
-                    </div>
-                </div>
+        <div class="teaching-courses">
+            <div class="teaching-heading">
+                <p class="teaching-eyebrow">Teaching</p>
+                <h1>Courses Taught</h1>
+                <p>Courses taught at the University of Illinois Urbana-Champaign.</p>
             </div>
-            <div class="timeline-item" id="fall2025">
-                <div class="timeline-left">
-                    <span class="timeline-dot" aria-hidden="true"></span>
-                    <div class="timeline-term">Fall 2025</div>
-                </div>
 
-                <div class="timeline-right">
-                    <div class="course-grid">
-                        <a class="course-chip" href="https://courses.illinois.edu/search/schedule/2025/fall/MATH/441?sess=" target="_blank" rel="noopener noreferrer">MATH 441: Differential Equations</a>
+            <div class="course-card-grid">
+                <article class="course-card">
+                    <div class="course-card-topline">
+                        <span class="course-code">MATH 442</span>
+                        <span class="course-school">Illinois</span>
                     </div>
-                </div>
-            </div>
-            <div class="timeline-item" id="spring2025">
-                <div class="timeline-left">
-                    <span class="timeline-dot" aria-hidden="true"></span>
-                    <div class="timeline-term">Spring 2025</div>
-                </div>
+                    <h2>Introduction to Partial Differential Equations</h2>
+                    <div class="course-terms">
+                        <span>Spring 2026</span>
+                    </div>
+                </article>
 
-                <div class="timeline-right">
-                    <div class="course-grid">
-                        <a class="course-chip" href="https://courses.illinois.edu/search/schedule/2025/spring/MATH/495?sess=" target="_blank" rel="noopener noreferrer">MATH 495: Models in Mathematical Biology</a>
+                <article class="course-card">
+                    <div class="course-card-topline">
+                        <span class="course-code">MATH 441</span>
+                        <span class="course-school">Illinois</span>
                     </div>
-                </div>
-            </div>
-            <div class="timeline-item" id="fall2024">
-                <div class="timeline-left">
-                    <span class="timeline-dot" aria-hidden="true"></span>
-                    <div class="timeline-term">Fall 2024</div>
-                </div>
+                    <h2>Differential Equations</h2>
+                    <div class="course-terms">
+                        <span>Fall 2025</span>
+                        <span>Fall 2023</span>
+                    </div>
+                </article>
 
-                <div class="timeline-right">
-                    <div class="course-grid">
-                        <a class="course-chip" href="https://courses.illinois.edu/search/schedule/2024/fall/MATH/558?sess=" target="_blank" rel="noopener noreferrer">MATH 558: Methods of Applied Mathematics</a>
+                <article class="course-card">
+                    <div class="course-card-topline">
+                        <span class="course-code">MATH 495</span>
+                        <span class="course-school">Illinois</span>
                     </div>
-                </div>
-            </div>
-            <div class="timeline-item" id="spring2024">
-                <div class="timeline-left">
-                    <span class="timeline-dot" aria-hidden="true"></span>
-                    <div class="timeline-term">Spring 2024</div>
-                </div>
+                    <h2>Models in Mathematical Biology</h2>
+                    <div class="course-terms">
+                        <span>Spring 2025</span>
+                        <span>Spring 2024</span>
+                    </div>
+                </article>
 
-                <div class="timeline-right">
-                    <div class="course-grid">
-                        <a class="course-chip" href="https://courses.illinois.edu/search/schedule/2024/spring/MATH/495?sess=" target="_blank" rel="noopener noreferrer">MATH 495: Models in Mathematical Biology</a>
+                <article class="course-card">
+                    <div class="course-card-topline">
+                        <span class="course-code">MATH 558</span>
+                        <span class="course-school">Illinois</span>
                     </div>
-                </div>
-            </div>
-            <div class="timeline-item" id="fall2023">
-                <div class="timeline-left">
-                    <span class="timeline-dot" aria-hidden="true"></span>
-                    <div class="timeline-term">Fall 2023</div>
-                </div>
-
-                <div class="timeline-right">
-                    <div class="course-grid">
-                        <a class="course-chip" href="https://courses.illinois.edu/search/schedule/2023/fall/MATH/441?sess=" target="_blank" rel="noopener noreferrer">MATH 441: Differential Equations</a>
+                    <h2>Methods of Applied Mathematics</h2>
+                    <div class="course-terms">
+                        <span>Fall 2024</span>
                     </div>
-                </div>
-            </div>
-            <div class="timeline-item" id="fall2023">
-                <div class="timeline-left">
-                    <span class="timeline-dot" aria-hidden="true"></span>
-                    <div class="timeline-term">Spring 2022 (Upenn)</div>
-                </div>
-
-                <div class="timeline-right">
-                    <div class="course-grid">
-                        <a class="course-chip" >Math 5861: Mathematical Modeling in Biology</a>
-                    </div>
-                </div>
+                </article>
             </div>
         </div>
         <div class="teaching-bg-box">

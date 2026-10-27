@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab</title>
+    <title>MathBio at Illinois | The Cooney Lab</title>
     <link rel="prefetch" href="../index.html">
     <link rel="preload" href="../assets/forest-poster.webp" as="image" type="image/webp">
+    <link rel="preload" href="../assets/internal-bg-v2.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
-    <img src="../assets/static_bg.png" alt="Static Background" class="static-bg">
+    <img src="../assets/internal-bg-v2.webp" alt="Static Background" class="static-bg">
     <div class="bg-overlay static-page-overlay" aria-hidden="true"></div>
     <header class="site-header">
         <a class="site-logo" href="../index.html" aria-label="logo_to_homepage">
@@ -25,63 +26,171 @@
             <a class="nav-link" href="../partials/MBUofI.html">MathBio in UofI</a>
         </nav>
     </header>
-    <main>
-        <div class="mb-bg-box">
-            <h1> Mathematical Biology Related Seminars:</h1>
-            <ul class="pub-list">
-                <li>
-                    HADES (Harmonic and Differential Equations Seminar) - Ran By Hewan Shemtaga- Tuesdays at 1:00-2:00
-                </li>
-                <li>
-                    <a href="https://sites.google.com/view/midwest-mathbio-seminar/home" target="_blank" rel="noopener">Midwest Mathematical Biology Seminar</a> - Hosted by Daniel Cooney - virtual, Tuesdays at 10:00-11:00 CT
-                </li>
-                <li>
-                    <a href="https://calendars.illinois.edu/list/7724" target="_blank" rel="noopener">Illinois Mathematical Biology Seminar</a> - Ran by Daniel Cooney, Polly Yu, Zoi Rapti, Lee DeVille - Thursdays at 1:00-2:00
-                </li>
-                <li>
-                    <a href="https://calendars.illinois.edu/list/7724" target="_blank" rel="noopener">Undergraduate Mathematical Reading Group</a> - Ran by Daniel Cooney - Monday 4pm
-                </li>
-                <li>
-                    <a href="https://researchseminars.org/seminar/MoRN" target="_blank" rel="noopener">Seminar on the Mathematics of Reaction Networks</a> - Hosted and Partially Ran by - Polly Yu - virtual, every other Thursdays  10:00-11:30 CT
-                </li>
-            </ul>
-        </div> 
+    <main class="mathbio-main">
+        <section class="mathbio-hero">
+            <p class="mathbio-eyebrow">MathBio at Illinois</p>
+            <h1>Mathematical Biology at Illinois</h1>
+            <p>Seminars, courses, and research opportunities for students interested in Mathematical Biology.</p>
+        </section>
 
-        <div class="mb-bg-box">
-            <h1>Related Courses</h1>
-
-            <h2><a class="math495-link" href="https://courses.illinois.edu/schedule/2026/spring/MATH/495" target="_blank" rel="noopener">Math 495 - Models in Mathematical Biology</a></h2>
-            <p>This is the primary course to take if you are interested in learning about mathematical biology.</p>
-            <p>Under Professor Cooney, this course will cover the following topics: Discrete and Continuous Models, Nondimentionalization, One-Dimentional ODE models for Population Dynamics, Stability Analysis and Bifurcation Models for Infectious Disesase, Replicator Equations, Equilibria and Stability for Systems of Nonlinear ODEs, Lotka-Voltera, Lypanov Fuctions, SIR Models, Evolutionary Game Theory, PDEs with Space-Time Ecological Dynamics, Reaction-Diffusion Equations, Turing Instabilites, and Spatial Pattern Formation </p>
-            <p>Notes                                Syllabus</p>
-            
-            <p>Under Professor Yu, this course will cover the following topics:</p>
-            <h2>Additional Relevant Math Classes:</h2>
-            <ul class="pub-list">
-            <li><a href="https://courses.illinois.edu/schedule/2026/spring/MATH/441" target="_blank" rel="noopener">Math 441</a> - Ordinary Differential Equations</li>
-            <li><a href="https://courses.illinois.edu/schedule/2026/spring/MATH/442" target="_blank" rel="noopener">Math 442</a> - Partial Differential Equations</li>
-            <li><a href="https://courses.illinois.edu/schedule/2026/spring/MATH/450" target="_blank" rel="noopener">Math 450</a> - Numerical Analysis</li>
-            <li><a href="https://courses.illinois.edu/schedule/2026/spring/MATH/466" target="_blank" rel="noopener">Math 466</a> - Applied Random Processes</li>
-            <li><a href="https://courses.illinois.edu/schedule/2026/spring/MATH/489" target="_blank" rel="noopener">Math 489</a> - Dynamical Systems</li>
-            <li><a href="https://courses.illinois.edu/schedule/2026/spring/MATH/550" target="_blank" rel="noopener">Math 550</a> - Dynamical Systems</li>
-            <li><a href="https://courses.illinois.edu/schedule/2026/spring/MATH/552" target="_blank" rel="noopener">Math 552</a> - Numerical Methods for PDEs</li>
-            <li><a href="https://courses.illinois.edu/schedule/2026/spring/MATH/553" target="_blank" rel="noopener">Math 553</a> - Partial Differential Equations</li>
-            <li><a href="https://courses.illinois.edu/schedule/2025/fall/MATH/554" target="_blank" rel="noopener">Math 554</a> - Linear Analysis of Partial Differential Equations</li>
-            <li><a href="https://courses.illinois.edu/schedule/2024/fall/MATH/558" target="_blank" rel="noopener">Math 558</a> - Methods of Applied Mathematics</li>
-            <li><a href="https://courses.illinois.edu/schedule/2025/fall/MATH/564" target="_blank" rel="noopener">Math 564</a> - Applied Stochastic Processes</li>
-            </ul>
+        <section class="mb-section" aria-labelledby="seminars-title">
+            <div class="mb-section-heading">
+                <div>
+                    <p class="mb-section-kicker">Community</p>
+                    <h2 id="seminars-title">Seminars &amp; Reading Groups</h2>
+                </div>
+                <p>Connect with mathematical biology researchers at Illinois and beyond.</p>
             </div>
-            <div class="mb-bg-box">
-            <h1>Research:</h1>
-            <p>The <a href="https://iml.math.illinois.edu/" target="_blank" rel="noopener">Illinois Mathematics Lab (IML)</a> is a great way to get involved in research without prior mathematical biology experience. There is usually at least one math-bio project every semester.</p>
-            <p>Current IML projects:</p>
-            <ul>
-            <li>"Numerical Modeling of Logistic Population Spread on Networks" — Hewan Shemtaga</li>
-            <li>"Spatial Spreading of Altruism: Beyond the Prisoner's Dilemma" — Daniel Cooney and Olivia Clifton</li>
-            </ul>
-        </div>
 
-            
+            <div class="seminar-grid">
+                <article class="seminar-card">
+                    <div class="seminar-card-topline">
+                        <span class="seminar-badge">In-Person</span>
+                        <span>Tuesday</span>
+                    </div>
+                    <h3><a href="https://calendars.illinois.edu/detail/7454?eventId=33564276" target="_blank" rel="noopener">HADES</a></h3>
+                    <p class="seminar-subtitle">Harmonic and Differential Equations Seminar</p>
+                    <div class="seminar-meta">
+                        <p><strong>Organized by</strong> Hewan Shemtaga and Olivia Clifton</p>
+                        <p><strong>Time</strong> 1:00–2:00 PM</p>
+                    </div>
+                </article>
+
+                <article class="seminar-card">
+                    <div class="seminar-card-topline">
+                        <span class="seminar-badge">Virtual</span>
+                        <span>Tuesday</span>
+                    </div>
+                    <h3><a href="https://sites.google.com/view/midwest-mathbio-seminar/home" target="_blank" rel="noopener">Midwest Mathematical Biology Seminar</a></h3>
+                    <p class="seminar-subtitle">A regional online seminar in mathematical biology.</p>
+                    <div class="seminar-meta">
+                        <p><strong>Organized by</strong> Daniel Cooney and Ning Wei (Purdue) </p>
+                        <p><strong>Time</strong> 10:00–11:00 AM CT</p>
+                    </div>
+                </article>
+
+                <article class="seminar-card">
+                    <div class="seminar-card-topline">
+                        <span class="seminar-badge">In-Person</span>
+                        <span>Thursday</span>
+                    </div>
+                    <h3><a href="https://calendars.illinois.edu/list/7724" target="_blank" rel="noopener">Illinois Mathematical Biology Seminar</a></h3>
+                    <p class="seminar-subtitle">Mathematical biology talks from researchers across disciplines.</p>
+                    <div class="seminar-meta">
+                        <p><strong>Organized by</strong> Daniel Cooney, Polly Yu, and Zoi Rapti</p>
+                        <p><strong>Time</strong> 1:00–2:00 PM CT</p>
+                    </div>
+                </article>
+
+                <article class="seminar-card">
+                    <div class="seminar-card-topline">
+                        <span class="seminar-badge">In-person</span>
+                        <span>Monday</span>
+                    </div>
+                    <h3><a href="https://calendars.illinois.edu/list/7724" target="_blank" rel="noopener">Mathematical Reading Group</a></h3>
+                    <p class="seminar-subtitle">A student-focused reading group organized by Daniel Cooney.</p>
+                    <div class="seminar-meta">
+                        <p><strong>Organized by</strong> Daniel Cooney</p>
+                        <p><strong>Time</strong> 4:00 PM CT</p>
+                    </div>
+                </article>
+
+                <article class="seminar-card seminar-card-wide">
+                    <div class="seminar-card-topline">
+                        <span class="seminar-badge">Virtual</span>
+                        <span>Every other Thursday</span>
+                    </div>
+                    <h3><a href="https://researchseminars.org/seminar/MoRN" target="_blank" rel="noopener">Seminar on the Mathematics of Reaction Networks</a></h3>
+                    <p class="seminar-subtitle">Research talks on the mathematics underlying reaction networks.</p>
+                    <div class="seminar-meta">
+                        <p><strong>Organized by</strong> Polly Yu</p>
+                        <p><strong>Time</strong> 10:00–11:30 AM CT</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="mb-section" aria-labelledby="featured-course-title">
+            <div class="mb-section-heading">
+                <div>
+                    <p class="mb-section-kicker">Featured Course</p>
+                    <h2 id="featured-course-title">Start with Mathematical Biology</h2>
+                </div>
+            </div>
+
+            <article class="featured-course-card">
+                <div class="featured-course-topline">
+                    <span class="featured-course-code">MATH 495</span>
+                    <span>University of Illinois</span>
+                </div>
+                <h3><a href="https://courses.illinois.edu/schedule/2026/spring/MATH/495" target="_blank" rel="noopener">Models in Mathematical Biology</a></h3>
+                <p class="featured-course-description">The primary course for students interested in mathematical biology, connecting dynamical systems, stochastic models, evolutionary games, and spatial ecological dynamics.</p>
+                <div class="course-topic-list" aria-label="Course topics">
+                    <span>Population Dynamics</span>
+                    <span>Bifurcation Analysis</span>
+                    <span>Evolutionary Game Theory</span>
+                    <span>SIR Models</span>
+                    <span>Reaction–Diffusion Equations</span>
+                    <span>Turing Instabilities</span>
+                    <span>Spatial Pattern Formation</span>
+                    <span>Nondimensionalization</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="mb-section" aria-labelledby="related-courses-title">
+            <div class="mb-section-heading">
+                <div>
+                    <p class="mb-section-kicker">Course Pathways</p>
+                    <h2 id="related-courses-title">Related Mathematics Courses</h2>
+                </div>
+                <!-- <p>Build the analytical, computational, and probabilistic tools used in mathematical biology.</p> -->
+            </div>
+
+            <div class="course-directory">
+                <a href="https://courses.illinois.edu/schedule/2026/spring/MATH/442" target="_blank" rel="noopener"><strong>MATH 442</strong><span>Partial Differential Equations</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://courses.illinois.edu/schedule/2026/spring/MATH/450" target="_blank" rel="noopener"><strong>MATH 450</strong><span>Numerical Analysis</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://courses.illinois.edu/schedule/2026/spring/MATH/466" target="_blank" rel="noopener"><strong>MATH 466</strong><span>Applied Random Processes</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://courses.illinois.edu/schedule/2026/spring/MATH/489" target="_blank" rel="noopener"><strong>MATH 489</strong><span>Dynamical Systems</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://courses.illinois.edu/schedule/2026/spring/MATH/550" target="_blank" rel="noopener"><strong>MATH 550</strong><span>Dynamical Systems</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://courses.illinois.edu/schedule/2026/spring/MATH/552" target="_blank" rel="noopener"><strong>MATH 552</strong><span>Numerical Methods for PDEs</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://courses.illinois.edu/schedule/2026/spring/MATH/553" target="_blank" rel="noopener"><strong>MATH 553</strong><span>Partial Differential Equations</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://courses.illinois.edu/schedule/2025/fall/MATH/554" target="_blank" rel="noopener"><strong>MATH 554</strong><span>Linear Analysis of PDEs</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://courses.illinois.edu/schedule/2024/fall/MATH/558" target="_blank" rel="noopener"><strong>MATH 558</strong><span>Methods of Applied Mathematics</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://courses.illinois.edu/schedule/2025/fall/MATH/564" target="_blank" rel="noopener"><strong>MATH 564</strong><span>Applied Stochastic Processes</span><span class="course-link-arrow" aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="mb-section" aria-labelledby="research-opportunities-title">
+            <div class="mb-section-heading">
+                <div>
+                    <p class="mb-section-kicker">Get Involved</p>
+                    <h2 id="research-opportunities-title">Research Opportunities</h2>
+                </div>
+            </div>
+
+            <div class="iml-feature">
+                <div class="iml-intro">
+                    <div>
+                        <h3>Illinois Mathematics Lab</h3>
+                        <p>The Illinois Mathematics Lab is a welcoming way to begin research without prior mathematical biology experience. MathBio projects are typically offered each semester.</p>
+                    </div>
+                    <a class="iml-button" href="https://iml.math.illinois.edu/" target="_blank" rel="noopener">Visit the IML website <span aria-hidden="true">→</span></a>
+                </div>
+
+                <p class="current-projects-label">Current IML projects</p>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h4>Numerical Modeling of Logistic Population Spread on Networks</h4>
+                        <p>Hewan Shemtaga</p>
+                    </article>
+                    <article class="project-card">
+                        <h4>Spatial Spreading of Altruism: Beyond the Prisoner's Dilemma</h4>
+                        <p>Daniel Cooney and Olivia Clifton</p>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
