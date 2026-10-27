@@ -1,27 +1,35 @@
 /*Flexbox (CSS Flexible Box Layout) is a layout system for arranging items in one direction at a time—either a row or a column—with easy alignment and spacing. 
 Here, we use CSS Grid to create a two-column layout for the hero section.*/
 
+@view-transition {
+  navigation: auto;
+}
+
 /*reset */
 * { box-sizing: border-box; }
-html, body { height: 100%; 
+html {
+  min-height: 100%;
+  scrollbar-gutter: stable;
+  background: #1b2617 url("assets/forest-poster.webp") center / cover fixed no-repeat;
+}
+
+html, body { height: 100%;
   /* background-color: thistle; testing background color only */
   margin: 0;
 }
-body { margin: 0; } 
-
-.bg-video{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   
-  z-index: -10;
+body {
+  margin: 0;
+  background: transparent;
 }
 
+.bg-video,
 .static-bg {
   position: fixed;
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;   
+  object-fit: cover;
+  object-position: center;
   z-index: -10;
 }
 
@@ -29,11 +37,11 @@ body { margin: 0; }
   position: fixed;
   inset: 0;
   z-index: -9;
-  background: rgba(0,0,0,0.10);  
+  background: rgba(0, 0, 0, 0.12);
 }
 
 .static-page-overlay {
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(255, 248, 225, 0.025);
 }
 
 /* Lab-only rendering hints; these do not change layout or appearance. */
@@ -75,6 +83,41 @@ body { margin: 0; }
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  view-transition-name: site-header;
+}
+
+body > main {
+  animation: page-content-in 180ms ease-out both;
+}
+
+@keyframes page-content-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::view-transition-group(root) {
+  animation-duration: 240ms;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-group(site-header) {
+  animation-duration: 180ms;
+  animation-timing-function: ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body > main,
+  ::view-transition-group(root),
+  ::view-transition-group(site-header) {
+    animation-duration: 0.01ms;
+  }
 }
 
 .logo {
@@ -131,7 +174,7 @@ body { margin: 0; }
   border-radius: 20px;
 
   /* “blurry board” */
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.22);
   -webkit-backdrop-filter: blur(0px);
   backdrop-filter: blur(5px);
 
@@ -291,6 +334,16 @@ body { margin: 0; }
 
 }
 
+/* Keep the three-column Lab grids inside their translucent background panel. */
+.lab-page .people-gridThird {
+  width: min(1200px, calc(100% - 80px));
+  margin-inline: auto;
+}
+
+.lab-page .people-gridThird > .person-card {
+  width: min(250px, 100%);
+}
+
 .people-gridThird > .person-card {
   width: 100%;
   min-width: 0;
@@ -372,7 +425,7 @@ body { margin: 0; }
 .teaching-bg-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(255, 248, 225, 0.025);
   z-index: -9;
 }
 
