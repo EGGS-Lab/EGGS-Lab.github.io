@@ -455,7 +455,7 @@ body > main {
 
 .teaching-eyebrow {
   margin: 0;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(214, 168, 90, 0.96);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -532,6 +532,194 @@ body > main {
   color: white;
   font-size: 14px;
   font-weight: 600;
+}
+
+.mentorship-archive {
+  width: min(1100px, 92vw);
+  margin: 82px auto 100px;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.28);
+}
+
+.mentorship-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  align-items: end;
+  gap: 56px;
+  margin-bottom: 34px;
+}
+
+.mentorship-eyebrow {
+  margin: 0 0 7px;
+  color: rgba(214, 168, 90, 0.96);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.mentorship-heading h2 {
+  margin: 0;
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 1.06;
+}
+
+.mentorship-heading > p {
+  margin: 0 0 4px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.mentorship-year {
+  border-top: 1px solid rgba(214, 168, 90, 0.48);
+}
+
+.mentorship-year:last-child {
+  border-bottom: 1px solid rgba(214, 168, 90, 0.48);
+}
+
+.mentorship-year > summary {
+  display: grid;
+  grid-template-columns: 1fr auto 28px;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.mentorship-year > summary::-webkit-details-marker,
+.mentorship-roster > summary::-webkit-details-marker {
+  display: none;
+}
+
+.mentorship-year-label {
+  color: rgba(255, 255, 255, 0.94);
+  font-size: clamp(24px, 2.5vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.mentorship-year-count {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.mentorship-year-toggle {
+  color: rgba(255, 224, 172, 1);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: right;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+.mentorship-year-toggle::before {
+  content: "+";
+}
+
+.mentorship-year[open] .mentorship-year-toggle::before {
+  content: "−";
+}
+
+.mentorship-projects {
+  padding-bottom: 10px;
+}
+
+.mentorship-project {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) minmax(180px, 230px);
+  align-items: start;
+  gap: 26px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.mentorship-term {
+  padding-top: 4px;
+  color: rgba(214, 168, 90, 0.98);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.mentorship-project-copy h3 {
+  margin: 0;
+  color: white;
+  font-size: clamp(19px, 2.4vw, 24px);
+  line-height: 1.25;
+  transition: color 160ms ease;
+}
+
+.mentorship-project:hover .mentorship-project-copy h3 {
+  color: rgba(255, 224, 172, 0.98);
+}
+
+.mentorship-collaboration {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 14px;
+}
+
+.mentorship-mentor {
+  padding-top: 3px;
+}
+
+.mentorship-mentor span {
+  display: block;
+  margin-bottom: 7px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.mentorship-mentor strong {
+  display: block;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.mentorship-roster {
+  margin-top: 15px;
+}
+
+.mentorship-roster > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 222, 167, 0.90);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.mentorship-roster > summary::after {
+  content: "+";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mentorship-roster[open] > summary::after {
+  content: "−";
+}
+
+.mentorship-roster p {
+  max-width: 680px;
+  margin: 9px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .teaching-bg-box{
@@ -652,6 +840,28 @@ body > main {
   .course-card h2 {
     margin-top: 24px;
   }
+
+  .mentorship-archive {
+    margin-top: 62px;
+  }
+
+  .mentorship-heading {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .mentorship-year > summary {
+    grid-template-columns: 1fr auto 22px;
+  }
+
+  .mentorship-project {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .mentorship-mentor {
+    margin-top: 6px;
+  }
 }
 
 
@@ -659,6 +869,7 @@ body > main {
   width: min(1180px, 92vw);
   margin: 68px auto 90px;
   color: white;
+  animation: none;
 }
 
 .mathbio-hero {

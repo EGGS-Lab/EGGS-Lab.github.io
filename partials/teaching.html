@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background: #1b2617 url('../assets/forest-poster.webp') center / cover fixed no-repeat;">
+<html lang="en" style="background: #1b2617 url('../assets/internal-bg-v2.webp') center / cover fixed no-repeat;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="preload" href="../assets/forest-poster.webp" as="image" type="image/webp">
     <link rel="preload" href="../assets/internal-bg-v2.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../navigation-guard.js" defer></script>
 </head>
 <body>
     <img src="../assets/internal-bg-v2.webp" alt="Static Background" class="static-bg">
@@ -80,60 +81,150 @@
                 </article>
             </div>
         </div>
-        <div class="teaching-bg-box">
-            <h2>Mentorship (Illinois Mathematics Lab)</h2>
-            <ul>
-                <li class="iml-projects">
-                    “Spatial Spreading of Altruism: Beyond the Prisoner’s Dilemma” (Spring 2026), jointly organized with Olivia Clifton
-                    <ul class="project-meta">
-                        <li>Undergraduate Students: TBA</li>
-                        <li>Graduate Mentor: Yuxuan Zhao</li>
-                    </ul>
-                </li>
-                <li class="iml-projects">
-                    “ODE and PDE Models for Cross-Scale Evolutionary Dynamics” (Spring 2026)
-                    <ul class="project-meta">
-                        <li>Undergraduate students: Gebran Hammoud, Jonas Liang, Naro Panjaitan</li>
-                        <li>Graduate Mentor: Shlok Mulye</li>
-                    </ul>
-                </li>
-                <li class="iml-projects">
-                    “Mathematical Frameworks for Exploring Cross-Scale Evolutionary Dynamics” (Fall 2025)
-                    <ul class="project-meta">
-                        <li>Undergraduate students: Panyue (Dan) Chen, Samuel Li, Jonas Liang, Xuhan Pan, Naro Panjaitan, Ke Yao, Yixu Zheng</li>
-                        <li>Graduate Mentor: Shlok Mulye, Muhammad Raza</li>
-                    </ul>
-                </li>
-                <li class="iml-projects">
-                    “Formation and Stability of Patterns in Spatial Models of Evolutionary Games” (Summer 2025)
-                    <ul class="project-meta">
-                        <li>Undergraduate students: Amy Bradu, Stanley Combes, David (Rui) Sang</li>
-                        <li>Graduate Mentor: Yefei Zhang</li>
-                    </ul>
-                </li>
-                <li class="iml-projects">
-                    “Stochastic Process and Differential Equation Models for Cross-Scale Evolutionary Dynamics” (Spring 2025)
-                    <ul class="project-meta">
-                        <li>Undergraduate students: Ali Alhaj, Tiger Gao, Yiming Gao, Ahaan Kanaujia, Mavin Khanday, Justin Lee, Jonas Liang, Xiangyu Tan, Jiaqi Tang, Yichen Zhou</li>
-                        <li>Graduate Mentor: Jiantong Liu, Muhammad Raza</li>
-                    </ul>
-                </li>
-                <li class="iml-projects">
-                    “Stochastic Models of Cross-Scale Evolutionary Dynamics” (Fall 2024)
-                    <ul class="project-meta">
-                        <li>Undergraduate students: Ali Alhaj, Tiger Gao, Yiming Gao, Ahaan Kanaujia, Mavin Khanday, Justin Lee, Jonas Liang, Xiangyu Tan, Jiaqi Tang, Yichen Zhou</li>
-                        <li>Graduate Mentor: Jiantong Liu, Shlok Mulye, Muhammad Raza</li>
-                    </ul>
-                </li>
-                <li class="iml-projects">
-                    “Spatial Models of Evolutionary Dynamics” (Spring 2024)
-                    <ul class="project-meta">
-                        <li>Undergraduate students: Jirui Liu, Seokhwan Moon, Ahmad Rahman, Edwin Shen, Chenning Xu, Tianyong Yao</li>
-                        <li>Graduate Mentor: Muhammad Raza</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <section class="mentorship-archive" aria-labelledby="mentorship-title">
+            <div class="mentorship-heading">
+                <div>
+                    <p class="mentorship-eyebrow">Mentorship</p>
+                    <h2 id="mentorship-title">Illinois Mathematics Lab Projects</h2>
+                </div>
+                <p>Research mentorship through collaborative mathematical biology projects.</p>
+            </div>
+
+            <div class="mentorship-years">
+                <details class="mentorship-year" name="mentorship-years">
+                    <summary>
+                        <span class="mentorship-year-label">2026</span>
+                        <span class="mentorship-year-count">2 Projects</span>
+                        <span class="mentorship-year-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="mentorship-projects">
+                        <article class="mentorship-project">
+                            <span class="mentorship-term">Spring</span>
+                            <div class="mentorship-project-copy">
+                                <h3>Spatial Spreading of Altruism: Beyond the Prisoner’s Dilemma</h3>
+                                <p class="mentorship-collaboration">Jointly organized with Olivia Clifton</p>
+                                <details class="mentorship-roster">
+                                    <summary>Undergraduate Researchers</summary>
+                                    <p>Darren Erawan, Eric Wang, Jiayi Huang, Diti Nainwal, Yongming Tao, Xuhan Pan</p>
+                                </details>
+                            </div>
+                            <div class="mentorship-mentor">
+                                <span>Graduate Student Mentor</span>
+                                <strong>Yuxuan Zhao</strong>
+                            </div>
+                        </article>
+
+                        <article class="mentorship-project">
+                            <span class="mentorship-term">Spring</span>
+                            <div class="mentorship-project-copy">
+                                <h3>ODE and PDE Models for Cross-Scale Evolutionary Dynamics</h3>
+                                <details class="mentorship-roster">
+                                    <summary>Undergraduate Researchers</summary>
+                                    <p>Gebran Hammoud, Jonas Liang, Naro Panjaitan</p>
+                                </details>
+                            </div>
+                            <div class="mentorship-mentor">
+                                <span>Graduate Student Mentors</span>
+                                <strong>Shlok Mulye, Muhammad Raza</strong>
+                            </div>
+                        </article>
+                    </div>
+                </details>
+
+                <details class="mentorship-year" name="mentorship-years">
+                    <summary>
+                        <span class="mentorship-year-label">2025</span>
+                        <span class="mentorship-year-count">3 Projects</span>
+                        <span class="mentorship-year-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="mentorship-projects">
+                        <article class="mentorship-project">
+                            <span class="mentorship-term">Fall</span>
+                            <div class="mentorship-project-copy">
+                                <h3>Mathematical Frameworks for Exploring Cross-Scale Evolutionary Dynamics</h3>
+                                <details class="mentorship-roster">
+                                    <summary>Undergraduate Researchers</summary>
+                                    <p>Panyue (Dan) Chen, Samuel Li, Jonas Liang, Xuhan Pan, Naro Panjaitan, Ke Yao, Yixu Zheng</p>
+                                </details>
+                            </div>
+                            <div class="mentorship-mentor">
+                                <span>Graduate Student Mentors</span>
+                                <strong>Shlok Mulye, Muhammad Raza</strong>
+                            </div>
+                        </article>
+
+                        <article class="mentorship-project">
+                            <span class="mentorship-term">Summer</span>
+                            <div class="mentorship-project-copy">
+                                <h3>Formation and Stability of Patterns in Spatial Models of Evolutionary Games</h3>
+                                <details class="mentorship-roster">
+                                    <summary>Undergraduate Researchers</summary>
+                                    <p>Amy Bradu, Stanley Combes, David (Rui) Sang</p>
+                                </details>
+                            </div>
+                            <div class="mentorship-mentor">
+                                <span>Graduate Student Mentor</span>
+                                <strong>Yefei Zhang</strong>
+                            </div>
+                        </article>
+
+                        <article class="mentorship-project">
+                            <span class="mentorship-term">Spring</span>
+                            <div class="mentorship-project-copy">
+                                <h3>Stochastic Process and Differential Equation Models for Cross-Scale Evolutionary Dynamics</h3>
+                                <details class="mentorship-roster">
+                                    <summary>Undergraduate Researchers</summary>
+                                    <p>Ali Alhaj, Tiger Gao, Yiming Gao, Ahaan Kanaujia, Mavin Khanday, Justin Lee, Jonas Liang, Xiangyu Tan, Jiaqi Tang, Yichen Zhou</p>
+                                </details>
+                            </div>
+                            <div class="mentorship-mentor">
+                                <span>Graduate Student Mentors</span>
+                                <strong>Jiantong Liu, Muhammad Raza</strong>
+                            </div>
+                        </article>
+                    </div>
+                </details>
+
+                <details class="mentorship-year" name="mentorship-years">
+                    <summary>
+                        <span class="mentorship-year-label">2024</span>
+                        <span class="mentorship-year-count">2 Projects</span>
+                        <span class="mentorship-year-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="mentorship-projects">
+                        <article class="mentorship-project">
+                            <span class="mentorship-term">Fall</span>
+                            <div class="mentorship-project-copy">
+                                <h3>Stochastic Models of Cross-Scale Evolutionary Dynamics</h3>
+                                <details class="mentorship-roster">
+                                    <summary>Undergraduate Researchers</summary>
+                                    <p>Ali Alhaj, Tiger Gao, Yiming Gao, Ahaan Kanaujia, Mavin Khanday, Justin Lee, Jonas Liang, Xiangyu Tan, Jiaqi Tang, Yichen Zhou</p>
+                                </details>
+                            </div>
+                            <div class="mentorship-mentor">
+                                <span>Graduate Student Mentors</span>
+                                <strong>Jiantong Liu, Shlok Mulye, Muhammad Raza</strong>
+                            </div>
+                        </article>
+
+                        <article class="mentorship-project">
+                            <span class="mentorship-term">Spring</span>
+                            <div class="mentorship-project-copy">
+                                <h3>Spatial Models of Evolutionary Dynamics</h3>
+                                <details class="mentorship-roster">
+                                    <summary>Undergraduate Researchers</summary>
+                                    <p>Jirui Liu, Seokhwan Moon, Ahmad Rahman, Edwin Shen, Chenning Xu, Tianyong Yao</p>
+                                </details>
+                            </div>
+                            <div class="mentorship-mentor">
+                                <span>Graduate Student Mentor</span>
+                                <strong>Muhammad Raza</strong>
+                            </div>
+                        </article>
+                    </div>
+                </details>
+            </div>
+        </section>
     </section>
 </body>
 </html>
