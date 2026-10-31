@@ -3,6 +3,50 @@
   let queuedNavigation = 0;
   let navigationReadyAt = window.performance.now() + navigationCooldown;
 
+  const siteHeader = document.querySelector(".site-header");
+  const navigationToggle = siteHeader?.querySelector(".nav-toggle");
+  const navigationMenu = siteHeader?.querySelector(".nav-bar");
+
+  const setNavigationOpen = (isOpen) => {
+    if (!siteHeader || !navigationToggle) {
+      return;
+    }
+
+    siteHeader.classList.toggle("nav-open", isOpen);
+    navigationToggle.setAttribute("aria-expanded", String(isOpen));
+    navigationToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  };
+
+  navigationToggle?.addEventListener("click", () => {
+    setNavigationOpen(!siteHeader.classList.contains("nav-open"));
+  });
+
+  navigationMenu?.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+      setNavigationOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setNavigationOpen(false);
+      navigationToggle?.focus();
+    }
+  });
+
+  const desktopNavigationMedia = window.matchMedia("(min-width: 981px)");
+  const closeNavigationAtDesktopWidth = (event) => {
+    if (event.matches) {
+      setNavigationOpen(false);
+    }
+  };
+
+  if (desktopNavigationMedia.addEventListener) {
+    desktopNavigationMedia.addEventListener("change", closeNavigationAtDesktopWidth);
+  } else {
+    desktopNavigationMedia.addListener(closeNavigationAtDesktopWidth);
+  }
+
   const lockNavigation = () => {
     navigationReadyAt = window.performance.now() + navigationCooldown;
   };
