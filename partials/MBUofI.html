@@ -9,7 +9,7 @@
     <link rel="preload" href="../assets/forest-poster.webp" as="image" type="image/webp">
     <link rel="preload" href="../assets/internal-bg-v2.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="../styles.css">
-    <script src="../navigation-guard.js" defer></script>
+    <script src="../navigation-guard.js?v=mobile-1" defer></script>
 </head>
 
 <body>
@@ -17,9 +17,14 @@
     <div class="bg-overlay static-page-overlay" aria-hidden="true"></div>
     <header class="site-header">
         <a class="site-logo" href="../index.html" aria-label="logo_to_homepage">
-            <img src="../assets/Cooney_logo.png" alt = "logo" class="logo">
+            <img src="../assets/cooney_logo.png" alt = "logo" class="logo">
         </a>
-        <nav class="nav-bar">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+        </button>
+        <nav class="nav-bar" id="primary-navigation">
             <a class="nav-link" href="../index.html">Home</a>
             <a class="nav-link" href="../partials/publications.html">Publications</a>
             <a class="nav-link" href="../partials/lab.html">Lab</a>
@@ -104,7 +109,7 @@
                     <h3><a href="https://researchseminars.org/seminar/MoRN" target="_blank" rel="noopener">Seminar on the Mathematics of Reaction Networks</a></h3>
                     <p class="seminar-subtitle">Research talks on the mathematics underlying reaction networks.</p>
                     <div class="seminar-meta">
-                        <p><strong>Organized by</strong> Polly Yu</p>
+                        <p><strong>Organized by</strong> Polly Yu, Daniele Cappelletti, Oskar Henriksson, Jinsu Kim, Stefan Müller, Tung Nguyen</p>
                         <p><strong>Time</strong> 10:00–11:30 AM CT</p>
                     </div>
                 </article>
