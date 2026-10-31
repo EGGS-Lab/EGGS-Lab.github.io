@@ -44,9 +44,11 @@ body {
   background: rgba(255, 248, 225, 0.025);
 }
 
-/* Lab-only rendering hints; these do not change layout or appearance. */
+/* Internal-page rendering hints; these do not change layout or appearance. */
 .lab-page .static-bg,
-.lab-page .bg-overlay {
+.lab-page .bg-overlay,
+.publications-page .static-bg,
+.publications-page .bg-overlay {
   transform: translateZ(0);
   backface-visibility: hidden;
   will-change: transform;
@@ -66,7 +68,8 @@ body {
 }
 
 /* Reuse the pre-softened internal background instead of recomputing blur on every scroll frame. */
-.lab-page .bg-box {
+.lab-page .bg-box,
+.publications-page .bg-box {
   background:
     linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
     url("assets/internal-bg-v2.webp") center / cover fixed no-repeat;
@@ -164,8 +167,13 @@ body > main {
 .avatar {
   width: 100%;
   max-width: 400px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 0;
+  box-shadow: none;
+  filter: saturate(0.9) contrast(0.96) sepia(0.04);
 }
 
 .intro-box {
@@ -174,9 +182,9 @@ body > main {
   border-radius: 20px;
 
   /* “blurry board” */
-  background: rgba(0, 0, 0, 0.22);
-  -webkit-backdrop-filter: blur(0px);
-  backdrop-filter: blur(5px);
+  background: rgba(9, 14, 10, 0.34);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 
   /* edge + depth */
   border: 0.5px solid rgba(255, 255, 255, 0.18);
